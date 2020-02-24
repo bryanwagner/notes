@@ -1,0 +1,298 @@
+
+///////////////////////
+// Position Specific //
+///////////////////////
+
+Have you worked with native iOS or Android development?
+Have you worked with React Native?
+
+
+
+
+///////////////////
+// Ruby Language //
+///////////////////
+
+Have you finished the Ruby Koans?
+http://rubykoans.com/
+(warmup question - regardless of the answer, encourage them to go through them)
+
+What is the difference between Rails and the Ruby SDK?
+(want to hear "convention over configuration")
+https://rvtechnologies.co.in/what-is-the-difference-between-ruby-and-ruby-on-rails/
+
+What is the difference between MRI Ruby, JRuby, and CRuby?
+http://www.rubyguides.com/2016/10/mri-vs-jruby-vs-rubinius/
+
+What is Active Record and why do you use it?
+http://guides.rubyonrails.org/active_record_basics.html
+(want to hear talk about ORMs)
+
+Why are exclamation marks sometimes used in ruby methods?
+https://stackoverflow.com/questions/612189/why-are-exclamation-marks-used-in-ruby-methods?rq=1
+(want to hear that `!` usually means the method is mutative)
+
+What is the difference between an .erb file and a .rb file?
+https://stackoverflow.com/questions/4284421/what-is-the-meaning-of-erb
+(want to hear that .erb is a template)
+
+What's the difference between variables that start with @ and @@ in Ruby?
+http://thoughts.codegram.com/understanding-class-instance-variables-in-ruby/
+
+What is the difference between Exception and StandardError in Ruby?
+https://stackoverflow.com/questions/10048173/why-is-it-bad-style-to-rescue-exception-e-in-ruby/10048406#10048406
+
+What does the `ensure` keyword in Ruby mean?
+https://stackoverflow.com/questions/2191632/begin-rescue-and-ensure-in-ruby
+
+What is Monkey Patching in Ruby?
+https://en.wikipedia.org/wiki/Monkey_patch
+
+
+
+
+///////////////////////
+// Memory Management //
+///////////////////////
+
+How does Ruby manage memory and how is this different from other languages?
+http://www.rubyinside.com/how-ruby-manages-memory-and-garbage-collection-3006.html
+(bonus if mentioning no local stack variables - everything on the heap)
+
+What is the difference between the memory heap and memory stack?
+https://stackoverflow.com/questions/79923/what-and-where-are-the-stack-and-heap
+
+
+
+
+//////////////////
+// Web Frontend //
+//////////////////
+
+What is the difference between Bootstrap and CSS?
+https://stackoverflow.com/questions/36520383/difference-between-bootstrap-and-css
+
+What is the difference between React and Angular?
+https://www.codementor.io/chrisharrington/react-vs-angularjs-how-the-two-compare-8t6f1ioan
+
+What is Selenium and why would you use it?
+http://www.seleniumhq.org/
+
+
+
+
+///////////////
+// Education //
+///////////////
+
+What is the difference between a statically typed language and a dynamically typed language?
+Examples of each?
+https://stackoverflow.com/questions/1517582/what-is-the-difference-between-statically-typed-and-dynamically-typed-languages
+
+What is the difference between a strongly typed language and a weakly typed language?
+Examples of each?
+https://en.wikipedia.org/wiki/Strong_and_weak_typing
+
+What is floating point precision loss?
+https://en.wikipedia.org/wiki/Loss_of_significance
+
+What is the difference between procedural, object-oriented, and functional programming paradigms?
+https://stackoverflow.com/questions/552336/oop-vs-functional-programming-vs-procedural
+
+What is the difference between the time complexity of quadratic, linear, log(n), and nlog(n) algorithms?
+https://en.wikipedia.org/wiki/Time_complexity
+
+What is a CRUD app and how do you implement one?
+https://en.wikipedia.org/wiki/Create,_read,_update_and_delete
+
+What is a hash function and why would you use one?
+https://en.wikipedia.org/wiki/Hash_function
+
+What is a character encoding and why are they important?
+https://en.wikipedia.org/wiki/Character_encoding
+
+
+
+
+/////////////////////////////////
+// Object Oriented Programming //
+/////////////////////////////////
+
+What is attr_accessor in ruby?
+https://stackoverflow.com/questions/4370960/what-is-attr-accessor-in-ruby
+
+What is the difference between a method override and a method overload? (Just ask about overrides if does not know overloading)
+http://rubylearning.com/satishtalim/ruby_overloading_methods.html
+
+What is the difference between inheritance and composition?  Why might you prefer composition over inheritance?
+https://en.wikipedia.org/wiki/Composition_over_inheritance
+
+What is polymorphism and is it used in Ruby?
+https://en.wikipedia.org/wiki/Polymorphism_(computer_science)
+https://robots.thoughtbot.com/back-to-basics-polymorphism-and-ruby
+
+
+
+
+////////////////////////////
+// Functional Programming //
+////////////////////////////
+
+With respect to Functional Programming, what is an example of a functional method in Ruby?
+https://www.rubypigeon.com/posts/avoid-mutation-functional-style-in-ruby/
+
+What is the difference between a block, proc, and lambda in Ruby?
+http://www.rubyguides.com/2016/02/ruby-procs-and-lambdas/
+(bonus points for discussion of Closures)
+
+
+
+
+//////////////////////
+// Code Correctness //
+//////////////////////
+
+What is a unit test and how do you write one in Ruby?
+https://en.wikipedia.org/wiki/Unit_testing
+http://rspec.info/
+(bonus points if Test-Driven Development is discussed)
+
+What are some IDEs and debuggers you can use in Ruby?
+https://www.jetbrains.com/ruby/
+http://www.aptana.com/
+http://donwilson.net/2010/11/tutorial-debugging-in-ruby/ (ruby -r debug)
+https://en.wikipedia.org/wiki/Interactive_Ruby_Shell
+
+In a typical web server, what are the differences between logging levels?
+https://www.tutorialspoint.com/log4j/log4j_logging_levels.htm
+http://guides.rubyonrails.org/debugging_rails_applications.html#log-levels
+
+
+
+
+///////////////
+// Databases //
+///////////////
+
+In a relational database, what is an index and why would you use one?
+https://en.wikipedia.org/wiki/Database_index
+
+What are N+1 Queries in Active Record and why should they concern you?
+https://semaphoreci.com/blog/2017/08/09/faster-rails-eliminating-n-plus-one-queries.html
+
+What is the difference between row store and column store databases?
+https://www.percona.com/blog/2016/12/14/row-store-and-column-store-databases/
+Examples?
+
+What is database sharding and why would you use it?
+https://en.wikipedia.org/wiki/Shard_(database_architecture)
+
+
+
+
+/////////////////////////
+// System Architecture //
+/////////////////////////
+
+What is Redis and why would you use it? (If they don't know, how about Memcached?)
+https://redis.io/topics/introduction
+https://memcached.org/
+
+What is the difference between AWS, Heroku, and Docker?
+https://www.reddit.com/r/webdev/comments/5zkzyy/eli5_whats_the_difference_between_aws_heroku/
+
+Can you briefly describe a typical, single CPU computer architecture, and talk about the latency between each system component?
+https://gist.github.com/jboner/2841832
+
+For web servers, how do you monitor system health, and what areas of the system should be monitored?
+https://matt.aimonetti.net/posts/2013/06/26/practical-guide-to-graphite-monitoring/
+https://aws.amazon.com/cloudwatch/
+https://github.com/getsentry/sentry
+https://github.com/ustream/openduty
+
+What is a package manager and where do you use them?
+https://en.wikipedia.org/wiki/Package_manager
+https://www.npmjs.com/
+http://bundler.io/
+https://brew.sh/
+https://chocolatey.org/
+https://en.wikipedia.org/wiki/APT_(Debian)
+
+What is a Message Broker in a publish-subscribe architecture?
+https://en.wikipedia.org/wiki/Message_broker
+Examples?
+http://activemq.apache.org/
+https://www.rabbitmq.com/
+http://zeromq.org/
+
+What is the difference between TCP and UDP?
+https://stackoverflow.com/questions/5970383/difference-between-tcp-and-udp
+
+Why would you use a graphics card to mine Bitcoin?
+https://en.wikipedia.org/wiki/OpenCL
+
+
+
+
+/////////////////
+// Concurrency //
+/////////////////
+
+How do you create a mutex in Ruby and where do you use them?
+https://stackoverflow.com/questions/14090731/synchronized-method-for-concurrency-in-ruby
+
+What is the difference between a thread and a process?
+https://stackoverflow.com/questions/200469/what-is-the-difference-between-a-process-and-a-thread
+
+What is a race condition?
+https://en.wikipedia.org/wiki/Race_condition
+
+Why is immutability valuable in a highly concurrent system?
+http://tutorials.jenkov.com/java-concurrency/thread-safety-and-immutability.html
+
+
+
+
+////////////
+// Devops //
+////////////
+
+What is Devops and what frameworks exist to perform it?
+https://en.wikipedia.org/wiki/DevOps
+http://capistranorb.com/
+https://www.ansible.com/
+
+What is an automation server such as Jenkins or Atlassian Bamboo, and why would you use one?
+https://en.wikipedia.org/wiki/Jenkins_(software)
+https://www.atlassian.com/software/bamboo
+https://en.wikipedia.org/wiki/Continuous_integration (aka Continuous Delivery)
+
+
+
+
+///////////////////////////////////
+// Simple Programming Challenges //
+///////////////////////////////////
+
+Reverse a list:
+
+def reverse(list)
+  # return a new list with the elements of the input reversed
+end
+
+Find the set of distinct strings from a list:
+
+def distinct(list)
+  # return a new list containing the distinct elements of the input
+end
+
+
+
+
+///////////////////////////////////////
+// (Optional) Google Style Questions //
+///////////////////////////////////////
+
+How many golf balls can you fit on a bus?
+http://www.businessinsider.com/answers-to-15-google-interview-questions-that-will-make-you-feel-stupid-2009-11
+
