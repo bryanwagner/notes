@@ -1,0 +1,93 @@
+
+I. Process - how are solutions delivered?
+  1. Do we have a project management solution?
+    Jira: https://www.atlassian.com/software/jira
+  2. Are the system requirements adequately elaborated?
+    Do we have requirements specifications?
+	Do we have any solution diagrams? (UML or other)
+  3. Do we have adequate system documentation for current solutions?
+  4. Do we have adequate code comments?
+  5. What is our Source Control? (Git is recommended)
+  6. What is our build system and deployment/devops solution?
+  7. Do we have a unit testing and regression testing solution?
+    Regression testing in build system (e.g. Jenkins): http://coding-is-art.com/regression-tests-rspec-and-rails/
+  8. Do our deployed technologies lend themselves to hirable developer demographics?
+    Stack Overflow Survey: https://insights.stackoverflow.com/survey/2017#technology
+
+II. Solutions - how can we inspect the quality of our solutions?
+  1. Do we have balanced programming patterns?
+    What is our Object Oriented, Procedural, and Functional programming profile?
+      Do we have excessive inheritance?
+	  How do we manage mutability vs. immutability?
+      Avoid monkey patching: http://www.rubypigeon.com/posts/4-ways-to-avoid-monkey-patching/
+    Do we check for preconditions and boundary conditions?
+    Do we manage concurrency?
+      Are we consistent with mutexes?
+	Do we use any system architecture patterns, such as EIP? (Enterprise Integration Patterns)
+	How much of the existing solution uses library solutions versus custom solutions?
+  2. Do we handle errors appropriately?
+    Are all exceptions logged?
+    Do we handle exceptions well with respect to fail-fast versus fail-safe situations?
+    Do we have HTTP traffic patterns?
+      If so, do we handle HTTP errors appropriately?  I.e. do we use CircuitBreakers for traffic flows that can halt?
+      jrugged: https://github.com/wsargent/circuit_breaker
+  3. How is persistence organized?
+    Do we use an ORM framework? (Object Relational Mapping)
+    What data should be normalized?
+    What data should be key/value cache?
+    What data should be batch processes?
+    What is the replication strategy?
+	Is persisted data readily available for audit?
+	  E.g. what data is available for analysis?
+	  Looker: https://looker.com/
+    Do we have an accurate profile of database query times?
+    Do we use DBCPs? (Database connection pools)
+      Check that database pool connection count is not too high: https://github.com/brettwooldridge/HikariCP/wiki/About-Pool-Sizing
+    How are GUIDs generated?
+      UUIDTools for GUIDs: http://stackoverflow.com/questions/1117584/generating-guids-in-ruby
+    Do we have an embedded test database for local debugging?
+
+III. Environment - how are solutions executed?
+  1. Do we have a system monitoring solution?
+    What technologies do we use for system monitoring?
+      Monitoring Rails with statsd and graphite:
+        https://codingdaily.wordpress.com/2013/05/02/monitoring-rails-with-statsd-and-graphite/
+        https://signalvnoise.com/posts/3091-pssst-your-rails-application-has-a-secret-to-tell-you
+      Nunes for Rails instrumentation: https://github.com/jnunemaker/nunes
+      ruby-metrics: https://github.com/johnewart/ruby-metrics
+      Manually sending data to graphite:
+        https://grantheffernan.wordpress.com/2011/06/01/sending-data-to-graphite-examples/
+        https://github.com/gosquared/graphite-metric
+      A frontend for graphite - rearview: https://github.com/livingsocial/rearview
+      Another monitor: http://godrb.com/
+    Do we have any monitoring Daemons?
+      https://github.com/mperham/sidekiq
+      https://github.com/collectiveidea/delayed_job
+      https://github.com/resque/resque
+      http://www.tobinharris.com/past/2009/3/9/6-ways-to-run-background-jobs-in-rubyonrails/
+        report system status for: CPU usage, memory, disk, sockets
+    Do we monitor queues? Can use Redis events or a daemon.
+      Redis events:
+      https://redis.io/topics/notifications
+  2. Do we have a system alert solution?
+    What technologies do we use for system alerting?
+      Graphite alerts - Cabot: http://cabotapp.com/use/graphite-checks.html
+      Uptime alerting example:
+        Server cluster A reports to graphite running on server B.
+        Server C sends pings to graphite on server B.
+        Server A sends alert if graphite can't ping, or if pings are seen in metrics from C.
+        Server C sends alert if graphite can't ping, or if pings are seen in metrics from A.
+    Are any external connections over SSL?
+      Using a daemon, report days until SSL certificates expire to monitor (send alert during business hours when < 7 days)
+    If we use AWS, are we using AWS alerting?
+  3. Do we have an optimal development environment?
+    How do we manage dependencies?
+      Dependency management for gems:
+        puppet: https://github.com/puppetlabs/puppet
+        chef: https://www.chef.io/
+        http://blog.takipi.com/deployment-management-tools-chef-vs-puppet-vs-ansible-vs-saltstack-vs-fabric/
+    Can the system be run in a local environment for testing and debugging?
+      For virtual environments, use Bundler:
+        http://stackoverflow.com/questions/486995/ruby-equivalent-of-virtualenv
+        http://gembundler.com/
+    Do we have a staging server?
