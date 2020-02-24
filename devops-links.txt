@@ -1,0 +1,31 @@
+You want to balance increasing your breadth of knowledge with your depth of knowledge.
+Breadth will be learning about new things, increasing perspective.
+Depth will be choosing an area of focus, and making a small project in it work like he did with this Python game. So in link form, it's a good idea to become familiar with:
+
+Languages/Scripting:
+Bash, as most web servers/services are hosted inside Linux OS: https://devhints.io/bash
+How Python compares to other languages: https://www.python.org/doc/essays/comparisons/
+Node.js is becoming extremely popular: https://nodejs.org/en/
+Look for side-by-side language comparisons like this one between TypeScript (a type-safe form of JavaScript) and Swift: https://alhazmy13.github.io/swift-is-like-typescript/
+That all the modern languages basically run on C (or an assembly which C is mainly a power tool for). So an awareness of how types match up with memory will really help you with other languages: https://www.cprogramming.com/tutorial/c-tutorial.html
+
+Continuous Integration/Continuous Delivery:
+For Devops, learn a lot about CI/CD: https://www.atlassian.com/continuous-delivery/principles/continuous-integration-vs-delivery-vs-deployment
+Learn an automation system. I like Anisble: https://github.com/ansible/ansible
+Other popular automation systems are Chef and Puppet: https://www.edureka.co/blog/chef-vs-puppet-vs-ansible-vs-saltstack/
+Know about Jenkins: https://jenkins.io/
+Know about Atlassian Bamboo (which uses Jenkins): https://www.atlassian.com/software/bamboo/comparison/bamboo-vs-jenkins
+
+Practical Devops:
+What AWS service names actually mean: https://expeditedsecurity.com/aws-in-plain-english/
+What Containers and orchestration are: https://containerjournal.com/topics/container-ecosystems/kubernetes-vs-docker-a-primer/
+Learn about monitoring frameworks like Nagios: https://www.nagios.org/
+Or the popular Datadog: https://www.datadoghq.com/
+Or New Relic: https://newrelic.com/
+And for AWS specifically, Cloudwatch: https://aws.amazon.com/cloudwatch/
+And the tools they use under the hood, such as statsd: https://github.com/statsd/statsd
+And its basic frontends Grafana and Graphite: https://coralogix.com/log-analytics-blog/grafana-vs-graphite/
+
+And look for good community discussion, like this sub-Reddit: https://www.reddit.com/r/devops/comments/89xs54/confused_between_chef_vs_puppet_vs_ansible/
+
+The best strategy is to quickly browse through the information. Get an awareness of what these things are and why people use them. Understand that people have different opinions about what solutions they like, and that no solution is "best" for every case. Then, with a good idea of the "ecosystem", pick an area to expertise in. When you're doing that, you'll cross into other domains as well, most commonly Bash, then into the tools/languages specific to your project.
