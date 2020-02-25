@@ -1,0 +1,12 @@
+https://github.com/cursedcoder/awesome-pixijs
+
+https://project-awesome.org/raphamorim/awesome-canvas
+
+https://blog.bitsrc.io/11-javascript-charts-and-data-visualization-libraries-for-2018-f01a283a5727
+
+
+Unreal Engine Blueprints:
+https://docs.unrealengine.com/en-US/Engine/Blueprints/Editor/UIBreakdowns/InterfaceUI/index.html
+
+check out this library, only 22 source files, built on Pixi.js, ISC license (permissive):
+https://github.com/strelok2012/BluePrintRenderer
