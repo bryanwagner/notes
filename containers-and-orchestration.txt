@@ -1,0 +1,2 @@
+https://containerjournal.com/topics/container-ecosystems/kubernetes-vs-docker-a-primer/
+https://logz.io/blog/5-hosted-kubernetes-platforms/
