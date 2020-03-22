@@ -44,12 +44,15 @@ https://github.com/JCash/xxHash-1
 https://nickbabcock.github.io/Farmhash.Sharp/articles/benchmarks.html   ***
 https://github.com/google/farmhash
 https://github.com/ravendb/ravendb/blob/v4.2/src/Sparrow/Hashing.cs
+
 https://roaringbitmap.org/about/
 https://github.com/RoaringBitmap/RoaringBitmap
 https://github.com/aviggiano/redis-roaring
 https://aras-p.info/blog/2016/08/02/Hash-Functions-all-the-way-down/
 https://moinakg.wordpress.com/2013/01/19/vectorizing-xxhash-for-fun-and-profit/
 https://github.com/aappleby/smhasher
+
+https://www.ietf.org/rfc/rfc2119.txt
 
 GCC:
 https://gcc.gnu.org/releases.html
@@ -130,5 +133,24 @@ https://stackoverflow.com/a/368731/759719
 try fread for large file streaming (or mmap but that's more volatile):
 https://lemire.me/blog/2012/06/26/which-is-fastest-read-fread-ifstream-or-mmap/
 https://www.boost.org/doc/libs/1_54_0/doc/html/interprocess/sharedmemorybetweenprocesses.html#interprocess.sharedmemorybetweenprocesses.mapped_file
+
+
+Streaming data over sockets:
+https://www.tenouk.com/Module40c.html
+https://www.softlab.ntua.gr/facilities/documentation/unix/unix-socket-faq/unix-socket-faq-2.html
+http://www.cplusplus.com/forum/lounge/212719/
+UDP to local machine is dangerous:
+https://stackoverflow.com/a/2128745/759719
+Fastest way to network locally could be this:
+Process process = Runtime.getRuntime().exec("your command"); to popen:
+https://stackoverflow.com/a/2887663/759719
+https://www.ibm.com/support/knowledgecenter/en/SSLTBW_2.2.0/com.ibm.zos.v2r2.hala001/stms.htm
+https://en.wikibooks.org/wiki/C_Programming/Stream_IO
+https://en.wikibooks.org/wiki/C_Programming/Networking_in_UNIX
+http://man7.org/linux/man-pages/man3/popen.3.html
+
+
+
+
 
 
