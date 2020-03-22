@@ -3,4 +3,15 @@ http://shader-playground.timjones.io/
 https://webglfundamentals.org/
 https://webglfundamentals.org/webgl/lessons/resources/webgl-state-diagram.html
 
+SDF:
+https://iquilezles.org/www/articles/distfunctions2d/distfunctions2d.htm
+https://iquilezles.org/www/articles/distfunctions/distfunctions.htm
+https://www.shadertoy.com/view/Xds3zN
+https://www.shadertoy.com/view/XdXcRB
+https://www.shadertoy.com/view/4llXD7
+https://www.shadertoy.com/view/3tSGDy
+https://www.shadertoy.com/view/3tS3zc
+
+
+
 

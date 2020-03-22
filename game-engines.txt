@@ -1,0 +1,32 @@
+
+Procgen:
+https://github.com/WardBenjamin/SimplexNoise
+https://github.com/Auburns/FastNoise_CSharp
+https://www.reddit.com/r/proceduralgeneration/comments/2sk9be/opensimplex_noise_in_c_2d3d4d_in_under_400_lines/
+https://galaxykate0.tumblr.com/post/139774965871/so-you-want-to-build-a-generator
+
+Math:
+https://github.com/pmttavara/pt_math/blob/master/pt_math.h
+
+Collisions:
+https://gamedev.stackexchange.com/questions/26501/how-does-a-collision-engine-work
+
+V8 embed:
+https://explorerplusplus.com/blog/2019/03/07/embedding-v8-c++-application
+https://github.com/pmed/v8pp
+https://v8.dev/docs/embed
+
+C Build tools:
+https://medium.com/@julienjorge/an-overview-of-build-systems-mostly-for-c-projects-ac9931494444
+https://cmake.org/documentation/
+https://cmake.org/cmake-tutorial/
+https://www.codeproject.com/Articles/1181455/A-CMake-tutorial-for-Visual-Cplusplus-developers
+https://stackoverflow.com/questions/34799916/copy-file-from-source-directory-to-binary-directory-using-cmake
+https://stackoverflow.com/a/25439296/759719
+https://www.codeproject.com/Articles/1181455/A-CMake-tutorial-for-Visual-Cplusplus-developers
+
+Header file dependencies
+http://blog.tuxedolabs.com/2018/02/09/header-file-dependencies.html
+
+SIMD:
+https://www.infoworld.com/article/3175127/simd-intrinsics-aren-t-so-scary-but-should-we-use-them.html
