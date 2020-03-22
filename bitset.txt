@@ -32,7 +32,7 @@ https://en.wikipedia.org/wiki/AES_instruction_set#New_instructions
 https://twitter.com/cmuratori/status/1055525847128432640/photo/1
 Benchmark:
 https://github.com/rurban/smhasher/
-^ this is basically recommended xxHash as the best in terms of quality/speed/portability
+^ this is basically recommending xxHash as the best in terms of quality/speed/portability
 
 Hashing links from email:
 https://en.wikipedia.org/wiki/Perfect_hash_function
