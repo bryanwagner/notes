@@ -17,7 +17,39 @@ Rust: https://github.com/jedisct1/rust-hyperloglog
 
 HLL Bench (Java): https://github.com/t3rmin4t0r/hll-perf
 
+Hash:
+xxHash:
+http://cyan4973.github.io/xxHash/
+Farmhash:
+https://github.com/google/farmhash
+t1ha:
+https://github.com/erthink/t1ha
+Meow Hash:
+https://github.com/cmuratori/meow_hash
+https://mollyrocket.com/meowhash
+which uses AES in a non-cryptographic way:
+https://en.wikipedia.org/wiki/AES_instruction_set#New_instructions
+https://twitter.com/cmuratori/status/1055525847128432640/photo/1
+Benchmark:
+https://github.com/rurban/smhasher/
+^ this is basically recommended xxHash as the best in terms of quality/speed/portability
 
+Hashing links from email:
+https://en.wikipedia.org/wiki/Perfect_hash_function
+https://cyan4973.github.io/xxHash/
+https://greenrobot.org/essentials/features/performant-hash-functions-for-java/comparison-of-hash-functions/
+https://softwareengineering.stackexchange.com/questions/49550/which-hashing-algorithm-is-best-for-uniqueness-and-speed/145633#145633  (older algorithms, but a good analysis)
+https://github.com/koron/java-xxhash-benchmark
+https://github.com/JCash/xxHash-1
+https://nickbabcock.github.io/Farmhash.Sharp/articles/benchmarks.html   ***
+https://github.com/google/farmhash
+https://github.com/ravendb/ravendb/blob/v4.2/src/Sparrow/Hashing.cs
+https://roaringbitmap.org/about/
+https://github.com/RoaringBitmap/RoaringBitmap
+https://github.com/aviggiano/redis-roaring
+https://aras-p.info/blog/2016/08/02/Hash-Functions-all-the-way-down/
+https://moinakg.wordpress.com/2013/01/19/vectorizing-xxhash-for-fun-and-profit/
+https://github.com/aappleby/smhasher
 
 GCC:
 https://gcc.gnu.org/releases.html
@@ -65,3 +97,38 @@ Templates:
 https://github.com/topics/makefile-template
 https://github.com/TheNetAdmin/Makefile-Templates/tree/master/BigProject
 https://github.com/roxma/easymake
+
+Library lists:
+https://github.com/kozross/awesome-c
+https://awesome-cpp.readthedocs.io/en/latest/README.html
+http://fffaraz.github.io/awesome-cpp/
+https://github.com/fffaraz/awesome-cpp
+https://github.com/uhub/awesome-c
+https://github.com/Bfgeshka/awesome-c
+
+CLI:
+https://github.com/lastpass/lastpass-cli
+
+Benchmark harness:
+https://github.com/okuvshynov/b63
+
+Collections-C (LGPL 3):
+https://github.com/srdja/Collections-C
+
+Packed Array:
+https://github.com/gpakosz/PackedArray
+
+C-Algorithms (check out Bloom Filter):
+https://github.com/fragglet/c-algorithms
+
+Jemalloc (probably worth a look, used in newer versions of MRI Ruby):
+https://github.com/jemalloc/jemalloc
+
+RAII-like cleanup function for C:
+https://stackoverflow.com/a/368731/759719
+
+try fread for large file streaming (or mmap but that's more volatile):
+https://lemire.me/blog/2012/06/26/which-is-fastest-read-fread-ifstream-or-mmap/
+https://www.boost.org/doc/libs/1_54_0/doc/html/interprocess/sharedmemorybetweenprocesses.html#interprocess.sharedmemorybetweenprocesses.mapped_file
+
+
