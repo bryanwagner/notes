@@ -150,7 +150,9 @@ https://en.wikibooks.org/wiki/C_Programming/Networking_in_UNIX
 http://man7.org/linux/man-pages/man3/popen.3.html
 
 
-
+Redis as a Message Queue:
+https://medium.com/@weyoss/building-a-simple-message-queue-using-redis-server-and-node-js-964eda240a2a
+https://github.com/weyoss/redis-smq
 
 
 
