@@ -29,4 +29,25 @@ object TimeUtils {
     block()
     return stopNanos(startNanos)
   }
+
+  data class ResultWithSeconds<T>(val result: T, val seconds: Float)
+  inline fun <T> resultWithSeconds(block: () -> T): ResultWithSeconds<T> {
+    val startNanos = start()
+    val result = block()
+    return ResultWithSeconds(result, stopSeconds(startNanos))
+  }
+
+  data class ResultWithMillis<T>(val result: T, val millis: Long)
+  inline fun <T> resultWithMillis(block: () -> T): ResultWithMillis<T> {
+    val startNanos = start()
+    val result = block()
+    return ResultWithMillis(result, stopMillis(startNanos))
+  }
+
+  data class ResultWithNanos<T>(val result: T, val nanos: Long)
+  inline fun <T> resultWithNanos(block: () -> T): ResultWithNanos<T> {
+    val startNanos = start()
+    val result = block()
+    return ResultWithNanos(result, stopNanos(startNanos))
+  }
 }
