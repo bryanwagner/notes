@@ -122,7 +122,7 @@ TWIML_APP_SID=<TWIML_APP_SID>
 VOICE_MAIL_RECORD_URL=<VOICE_MAIL_RECORD_URL>
 ```
 
-Note: we should not be storing AWS credentials in the `.env` file. We should use the [AWS Shared Credentials File](https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/loading-node-credentials-shared.html) in your local environment:
+Note: we should not be storing AWS credentials in the `.env` file. We should use the [AWS Shared Credentials File](https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/loading-node-credentials-shared.html) in your local environment.
 
 In hosted environments on AWS (production, staging, and develop), the env variables are located within the Elastic Beanstalk configuration for each environment. For example, in the AWS Console, select the correct region (`us-east-1`) and navigate to:
 
