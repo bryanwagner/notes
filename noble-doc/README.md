@@ -71,7 +71,7 @@ We use [dotenv](https://www.npmjs.com/package/dotenv) for system configuration. 
 Local `.env` example template for `noble-express-api`:
 
 ```
-#API_URL=https://api-staging.noble.us
+#API_URL=<API_URL>
 API_URL=https://44e395b3a59e.ngrok.io
 
 PORT=3000
@@ -79,7 +79,7 @@ ENV=local
 
 DB_USER=noble
 DB_PASSWORD=<DB_PASSWORD>
-DB_HOST=noble-staging.cy6dgps41lr6.us-east-1.rds.amazonaws.com
+DB_HOST=<DB_HOST>
 DB_PORT=5432
 DB_NAME=noble_staging
 
@@ -119,7 +119,7 @@ TWILIO_AUTH_TOKEN=<TWILIO_AUTH_TOKEN>
 TWILIO_PHONE_NUMBER=<TWILIO_PHONE_NUMBER>
 TWILIO_VOICE_MAIL_NUMBER=<TWILIO_VOICE_MAIL_NUMBER>
 TWIML_APP_SID=<TWIML_APP_SID>
-VOICE_MAIL_RECORD_URL=https://noble-common-data.s3.amazonaws.com/Noble+Navigators-vm.wav
+VOICE_MAIL_RECORD_URL=<VOICE_MAIL_RECORD_URL>
 ```
 
 Note: we should not be storing AWS credentials in the `.env` file. We should use the [AWS Shared Credentials File](https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/loading-node-credentials-shared.html) in your local environment:
